@@ -1,6 +1,6 @@
 ﻿namespace Golestan;
 
-public class Semester
+public class Semester:IEntity
 {
-    
+    public int Id { get; set; }
 }

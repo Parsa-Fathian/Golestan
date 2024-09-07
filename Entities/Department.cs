@@ -1,6 +1,7 @@
 ﻿namespace Golestan;
 
-public class Department
+public class Department:IEntity
 {
-    
+    public int Id { get; set; }
+    public String DepartmentName { get; set; }
 }
