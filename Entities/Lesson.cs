@@ -1,5 +1,4 @@
-﻿namespace Golestan;
-
+﻿
 public class Lesson:IEntity
 {
     public int Id { get; set; }

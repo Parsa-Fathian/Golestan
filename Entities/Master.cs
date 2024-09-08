@@ -1,5 +1,4 @@
-﻿namespace Golestan;
-
+﻿
 public class Master:IEntity
 {
     public int Id { get; set; }

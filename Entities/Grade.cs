@@ -1,5 +1,4 @@
-﻿namespace Golestan;
-
+﻿
 public class Grade
 {
     public String StudentId { get; set; }

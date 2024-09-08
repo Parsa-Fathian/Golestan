@@ -1,5 +1,4 @@
-﻿namespace Golestan;
-
+﻿
 public class Student:IEntity
 {
     public int Id { get; set; }

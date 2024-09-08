@@ -1,4 +1,4 @@
-﻿namespace Golestan;
+﻿
 
 public class Department:IEntity
 {

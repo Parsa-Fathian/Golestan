@@ -1,6 +1,5 @@
-﻿namespace Golestan;
-
-public class IGradeHelper
+﻿
+public interface IGradeHelper
 {
     
 }

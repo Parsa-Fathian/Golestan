@@ -1,6 +1,5 @@
-﻿namespace Golestan;
-
-public class IStudentHelper
+﻿
+public interface IStudentHelper
 {
     
 }

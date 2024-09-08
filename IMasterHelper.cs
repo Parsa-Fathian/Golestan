@@ -1,6 +1,5 @@
-﻿namespace Golestan;
-
-public class IMasterHelper
+﻿
+public interface IMasterHelper
 {
     
 }

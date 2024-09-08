@@ -1,6 +1,5 @@
-﻿namespace Golestan;
-
-public class IPasswordHelper
+﻿
+public interface IPasswordHelper
 {
     
 }

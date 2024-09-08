@@ -1,6 +1,5 @@
-﻿namespace Golestan;
-
-public class ILessonHelper
+﻿
+public interface ILessonHelper
 {
     
 }
