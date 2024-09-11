@@ -1,5 +1,5 @@
 ﻿
-public class Lesson:IEntity
+public class Lesson : IEntity
 {
     public int Id { get; set; }
     public int LessonId { get; set; }

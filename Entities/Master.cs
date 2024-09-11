@@ -1,5 +1,4 @@
-﻿
-public class Master:IEntity
+﻿public class Master : IEntity
 {
     public int Id { get; set; }
     public string FirstName { get; set; }
