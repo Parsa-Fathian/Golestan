@@ -6,4 +6,5 @@
     public string LastName { get; set; }
     public string StudyField { get; set; }
     public DateTime JoinDate { get; set; }
+    public string password { get; set; }
 }

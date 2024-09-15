@@ -12,13 +12,16 @@ public class MasterHelper : IMasterHelper
         var SF = Console.ReadLine();
         Console.WriteLine("Enter MasterId");
         var Id = Console.ReadLine();
+        Console.WriteLine("Chose password");
+        var pass = Console.ReadLine();
         Masters.Add(new Master
         {
             FirstName = FName,
             LastName = LName,
             StudyField = SF,
             JoinDate = DateTime.Now,
-            MasterId = Id
+            MasterId = Id,
+            password = pass
         });
     }
     public void Search()

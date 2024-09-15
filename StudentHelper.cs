@@ -12,13 +12,16 @@ public class StudentHelper : IStudentHelper
        var Lname = Console.ReadLine();
        Console.WriteLine("Enter your studyfeild");
        var major = Console.ReadLine();
+       Console.WriteLine("Choose password");
+       var pass = Console.ReadLine();
        students.Add(new Student
            {
                StudentId = Id,
                FirstName = Fname,
                LastName = Lname,
                StudyFeild = major,
-               JoinDate = DateTime.Now
+               JoinDate = DateTime.Now,
+               password = pass
            });
        Console.WriteLine("Added successful");
     }

@@ -7,4 +7,5 @@ public class Student:IEntity
     public string LastName { get; set; }
     public string StudyFeild { get; set; }
     public DateTime JoinDate { get; set; }
+    public string password { get; set; }
 }
