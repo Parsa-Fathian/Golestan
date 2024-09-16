@@ -1,6 +1,6 @@
 ﻿namespace Golestan;
 
-public class Admin : IAdmin
+public interface IAdmin
 {
     
 }

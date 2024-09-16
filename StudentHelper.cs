@@ -41,4 +41,10 @@ public class StudentHelper : IStudentHelper
        }
        Console.WriteLine();
     }
+
+    public void Edit()
+    {
+        Console.WriteLine("Enter studentid to edit");
+        string si = Console.ReadLine();
+    }
 }
