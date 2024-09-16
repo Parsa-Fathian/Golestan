@@ -13,7 +13,7 @@ public class LessonHelper : ILessonHelper
         Lessons.Add(new Lesson
         {
             Name = name,
-            LessonId = id,
+            LessonNumber = id,
             Credits = value,
             Date = DateTime.Now
         });
@@ -23,7 +23,7 @@ public class LessonHelper : ILessonHelper
     {
         Console.WriteLine("Enter StudentId");
         String SId = Console.ReadLine();
-        var result =Lessons.Where(i => i.LessonId.Contains(SId));
+        var result =Lessons.Where(i => i.LessonNumber.Contains(SId));
 
         if (result.Any() == false)
         {

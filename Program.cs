@@ -11,6 +11,7 @@ class Program
         MasterHelper master = new MasterHelper();
         DepartmentHelper department = new DepartmentHelper();
         LessonHelper lesson = new LessonHelper();
+        string pass = "pf1380";
         while (true)
         {
             IStudentHelper Student = new StudentHelper();
@@ -20,38 +21,67 @@ class Program
             {
                 if (s == 1)
                 {
-                    Show.Admin_menu();
-                    string inputAdmin = Console.ReadLine();
-                    if (int.TryParse(inputAdmin, out int z))
+                    
+                    Console.Write("Enter Password:");
+                    string ps = Console.ReadLine();
+                    if(ps == pass)
                     {
-                        if (z==1)
+                        Show.Admin_menu();
+                        string inputAdmin = Console.ReadLine();
+                        if (int.TryParse(inputAdmin, out int z))
                         {
-                          student.Add();  
-                        }
+                            if (z == 1)
+                            {
+                                student.Add();
+                            }
 
-                        if (z == 2)
-                        {
-                            master.Add();
-                        }
+                            if (z == 2)
+                            {
+                                master.Add();
+                            }
 
-                        if (z == 3)
-                        {
-                            department.Add();
-                        }
-                        if (z == 4)
-                        {
-                         lesson.Add();   
-                        }
+                            if (z == 3)
+                            {
+                                department.Add();
+                            }
 
-                        if (z == 5)
+                            if (z == 4)
+                            {
+                                lesson.Add();
+                            }
+
+                            if (z == 5)
+                            {
+                                student.Edit();
+                            }
+
+                            if (z == 6)
+                            {
+                                master.Edit();
+                            }
+
+                            if (z == 7)
+                            {
+                                student.search();
+                                
+                            }
+
+                            if (z == 8)
+                            {
+                                master.Search();
+                            }
+
+                        }
+                        else
                         {
-                            
+                            Console.WriteLine("Invalid input. Please enter a number.");
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Invalid input. Please enter a number.");
+                        Console.WriteLine("Wrong!please enter correct form ");
                     }
+
                 }
                 if (s == 2)
                 {

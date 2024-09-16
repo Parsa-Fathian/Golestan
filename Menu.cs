@@ -18,8 +18,8 @@ public class Menu : IMenu
         Console.WriteLine("4.Add lesson");
         Console.WriteLine("5.Edit Student");
         Console.WriteLine("6.Edit master");
-        Console.WriteLine("7.Search student by studentid");
-        Console.WriteLine("8.Search student by masterid");
+        Console.WriteLine("7.Search student by studentnumber");
+        Console.WriteLine("8.Search student by masternumber");
     }
     public void Student_menu()
     {

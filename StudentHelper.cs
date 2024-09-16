@@ -14,14 +14,17 @@ public class StudentHelper : IStudentHelper
        var major = Console.ReadLine();
        Console.WriteLine("Choose password");
        var pass = Console.ReadLine();
+       Console.WriteLine("Enter department");
+       var dep = Console.ReadLine();
        students.Add(new Student
            {
-               StudentId = Id,
+               StudentNumber = Id,
                FirstName = Fname,
                LastName = Lname,
                StudyFeild = major,
                JoinDate = DateTime.Now,
-               password = pass
+               password = pass,
+               Department = dep
            });
        Console.WriteLine("Added successful");
     }
@@ -30,7 +33,7 @@ public class StudentHelper : IStudentHelper
     {
        Console.WriteLine("Enter StudentId");
        String SId = Console.ReadLine();
-       var result =students.Where(i => i.StudentId.Contains(SId));
+       var result =students.Where(i => i.StudentNumber.Contains(SId));
        if (result.Any() == false)
        {
            Console.WriteLine("No student found.");
@@ -46,5 +49,16 @@ public class StudentHelper : IStudentHelper
     {
         Console.WriteLine("Enter studentid to edit");
         string si = Console.ReadLine();
+        var student = students.FirstOrDefault(s => s.StudentNumber == si);
+        if (student != null)
+        {
+            Console.WriteLine($"Student found:{student.FirstName},{student.LastName}");
+        }
+        else
+        {
+            Console.WriteLine("Student not found!");
+        }
+
+        Console.ReadKey();
     }
 }
