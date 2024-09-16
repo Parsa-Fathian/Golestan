@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Golestan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d49019aa52fd5d2a7e2386ba244efb20edc8b13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce55217d1380ae33959f2fdb928a60d3c8f6c2eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Golestan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Golestan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

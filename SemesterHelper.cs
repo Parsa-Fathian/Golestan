@@ -8,7 +8,6 @@ public class SemesterHelper : ISemesterHelper
         Semesters.Add(new Semester
             {
                 Time = Date
-            }
-            );
+            });
     }
 }

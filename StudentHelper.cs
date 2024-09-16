@@ -31,7 +31,6 @@ public class StudentHelper : IStudentHelper
        Console.WriteLine("Enter StudentId");
        String SId = Console.ReadLine();
        var result =students.Where(i => i.StudentId.Contains(SId));
-
        if (result.Any() == false)
        {
            Console.WriteLine("No student found.");
@@ -41,6 +40,5 @@ public class StudentHelper : IStudentHelper
            Console.WriteLine("This student has exsist");
        }
        Console.WriteLine();
-       
     }
 }
