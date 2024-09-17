@@ -58,7 +58,6 @@ public class StudentHelper : IStudentHelper
         {
             Console.WriteLine("Student not found!");
         }
-
         Console.ReadKey();
     }
 }

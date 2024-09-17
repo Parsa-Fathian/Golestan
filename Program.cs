@@ -89,7 +89,19 @@ class Program
                 }
                 if (s == 3)
                 {
-                    
+                    Console.WriteLine("Please enter your masternumber");
+                    string num = Console.ReadLine();
+                    Console.WriteLine("Please enter your password");
+                    string MPass = Console.ReadLine();
+                    bool res = master.Authentication(num, MPass);
+                    if (res)
+                    { 
+                        Show.Master_menu();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wrong! please enter correct ");
+                    }
                 }
                 if(s == 9)
                 {

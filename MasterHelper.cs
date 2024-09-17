@@ -44,6 +44,20 @@ public class MasterHelper : IMasterHelper
         Console.WriteLine();
     }
 
+    public bool Authentication(string MN, string Mpass)
+    {
+        var result01 =Masters.Where(i => i.MasterNumber.Contains(MN));
+        var result02 =Masters.Where(i => i.password.Contains(Mpass));
+        if (result01 != null && result02 != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void Edit()
     {
         Console.WriteLine("Enter studentid to edit");
