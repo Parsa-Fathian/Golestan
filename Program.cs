@@ -94,9 +94,25 @@ class Program
                     Console.WriteLine("Please enter your password");
                     string MPass = Console.ReadLine();
                     bool res = master.Authentication(num, MPass);
+                    Console.WriteLine(res);
                     if (res)
                     { 
+                        Console.WriteLine();
                         Show.Master_menu();
+                        string inputMaster = Console.ReadLine();
+                        if (int.TryParse(inputMaster, out int M))
+                        {
+                            if (M == 1)
+                            {
+                                
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wrong!please enter correct form ");
+                        }
+                        
+                        
                     }
                     else
                     {

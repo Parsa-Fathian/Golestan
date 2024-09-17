@@ -43,20 +43,17 @@ public class MasterHelper : IMasterHelper
         }
         Console.WriteLine();
     }
-
+    
     public bool Authentication(string MN, string Mpass)
     {
-        var result01 =Masters.Where(i => i.MasterNumber.Contains(MN));
-        var result02 =Masters.Where(i => i.password.Contains(Mpass));
-        if (result01 != null && result02 != null)
+        var result = Masters.FirstOrDefault(i => i.MasterNumber == MN && i.password == Mpass);
+        if (result != null)
         {
             return true;
         }
-        else
-        {
-            return false;
-        }
+        return false;
     }
+
 
     public void Edit()
     {
