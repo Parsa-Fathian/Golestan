@@ -6,4 +6,5 @@ public class Lesson : IEntity
     public string Name { get; set; }
     public int Credits { get; set; }
     public DateTime Date { get; set; }
+    public string major { get; set; }
 }
